@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Черноморская](https://up.htmlacademy.ru/htmlcss/35/user/2216777).
-* Наставник: [Евгений Котов ](https://htmlacademy.ru/profile/evgeniy_kotov).
+* Наставник: [Евгений Котов](https://htmlacademy.ru/profile/evgeniy_kotov).
 
 ---
 
