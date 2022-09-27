@@ -1,3 +1,16 @@
-.banner-landscape {
-  background-image: url ("index-background.jpg");
+.banner-landscape {background-image: url("index-background1.jpg");
+  height: 428px;
+  width: 1200px;
+}
+.banner-text {padding-top: 51.4px;
+
+
+
+}
+.banner-landscape{text-align: center;}
+.decor-corner {
+  height: 57px;
+  width: 1200px;
+  background-image: url("divider.svg");
+
 }
