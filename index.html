@@ -11,7 +11,7 @@
     <header class="main-header">
       <nav class="navigation">
          <a href="https://htmlacademy.ru"
-              ><img src="img/svg/logo.svg" alt="Логотип компании" />
+              ><img src="img/svg/logo.svg" alt="Логотип компании">
             </a>
           <ul class="navigation-list">
           <li class="navigation-item"><a class="navigation-link navigation-link-current">Главная</a></li>
@@ -35,60 +35,74 @@
     <!--end-header-->
 
     <!--start-main-->
-    <main class="main-page">
-      <header class="description">
-         <h1 class="visually-hidden">Город Седона. Туризм.</h1>
-      <span class="description-pic"></span><!-- возможно сюда нужно вставить  текстовые картинки  с    welcome и sedonа/ на мой взгляд они все же не декоративные-->>
-      <p class="description-text">
-       <span class="description-sedona">Седона — небольшой городок в Аризоне, заслуживающий большего!</span> <br>
+     <!--секция для баннера-->
+<main class="main-page">
+<section class="banner">
+<div class="banner-landscape" width="100" height="150"></div>
+<div class="banner-decor-corner"></div>
+</section>
+ <!--Главный заголовок и описание-->
+    <section class="description">
+      <h1 class="visually-hidden">Город Седона. Туризм.</h1>
+     <p class="description-text">
+      <span class="description-sedona">Седона — небольшой городок в Аризоне, заслуживающий большего!</span> <br>
         Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
       </p>
-    </header>
-
-      <section class="advantages">
+    </section>
+ <!--преимущества - ряд1-->
+    <section class="advantages1">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item blue">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-desctiption">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </li>
           <li class="advantages-item"><img src="img/photo-1.jpg" alt=" Один из видов города" ></li>
-          <li class="advantages-item">
+          </ul>
+<!--преимущества - ряд2-->
+          <section class="advantages2">
+          <ul class="advantages-list"></ul>>
+          <li class="advantages-item light-blue">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-desctiption">
               Все достопримечательности находятся очень близко
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item not-so-blue">
             <h3 class="advantages-title">Красивая
               дорога</h3>
             <p class="advantages-desctiption">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item  light-blue">
             <h3 class="advantages-title">Мало
               туристов</h3>
             <p class="advantages-desctiption">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
+        </ul>
+      </section>
+      <!--преимущества- ряд3-->
+      <section class="advantages3">
+        <ul class="advantages-list"></ul>>
           <li class="advantages-item"><img src="img/photo-2.jpg" alt="Мост Дьявола"></li>
-          <li class="advantages-item">
+          <li class="advantages-item blue">
             <h3 class="advantages-title">Там есть
               мост дьявола</h3>
-            <p class="advantages-desctiption">
+            <p class="advantages-desctiption3">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
           </li>
           </ul>
         </section>
-
+<!--рекомендации-->
           <section class="recommendation">
             <ul class="recommendation-list">
-           <li class="recommendation-item">
+           <li class="recommendation-item not-so-blue">
             <span class="recommendation-icon-hotel"></span>
             <h3 class="recommendation-title">
               Жильё
@@ -98,7 +112,7 @@
               всё как в кино!
             </p>
           </li>
-          <li class="recommendation-item">
+          <li class="recommendation-item white">
             <span class="recommendation-icon-food"></span>
             <h3 class="recommendation-title">Еда</h3>
             <p class="recommendation-desctiption">
@@ -106,7 +120,7 @@
               топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="recommendation-item">
+          <li class="recommendation-item not-so-blue">
             <span class="recommendation-icon-souvenir"></span>
             <h3 class="ecommendation-title">Сувениры</h3>
             <p class="recommendation-desctiption">
@@ -116,7 +130,7 @@
           </li>
         </ul>
       </section>
-
+ <!--поиск гостиницы-->
       <section class="search">
       <h2 class = "visually-hidden">Поиск гостиницы</h2>
       <p class="searching-hotel"><b>Заинтересовались?</b></p>
@@ -127,6 +141,7 @@
  <!--end-main-->
 
  <!--start-footer-->
+ <!--рассылка-->
 <footer class="important">
   <section class="footer-subscribe">
    <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -136,6 +151,7 @@
     <input type="submit" value="Подписаться">
   </form>
   </section>
+    <!--инф для связи-->
   <section class="info-connect">
     <ul class="social-list">
       <li class="social-item">
@@ -144,11 +160,12 @@
           <a class="button" href="https:// t.me/htmlacademy"><span class="visually-hidden"> Телеграм</span></a>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlcademyru"><span class="visually-hidden"> YouTube</span></a>
-    </ul class="info-phone">
+    </ul >
+
     <ul class="phone-list">
       <li class="phone-item"><a href="#"  alt="Телефон">+7 (812) 812-12-12</a></li>
     </ul>
-  </ul>
+
   <ul class="info-website">
     <li class="website-item"><a href="#"><img src="img/svg/Logo1.svg" alt="Логотип компании"></a></li>
   </ul>

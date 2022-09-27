@@ -8,10 +8,9 @@ s<!DOCTYPE html>
 
      <!--start-header-->
     <header class="main-header">
-      <nav class="navigation">
-         <a  class ="navigation-logo" href="index.html"
-              ><img src="img/svg/logo.svg" alt="Логотип компании" />
+      <a  class ="navigation-logo" href="index.html"><img src="img/svg/logo.svg" alt="Логотип компании">
             </a>
+            <nav class="navigation">
             <ul class="navigation-list">
           <li class="lnavigation-item"><a class="navigation-link" href="#">Главная</a></li>
           <li class="lnavigation-item"><a  class="navigation-link" href="#">О седоне</a></li>
@@ -34,16 +33,18 @@ s<!DOCTYPE html>
     <!--end-header-->
 
      <!--start-main-->
-     <main class="main-inner">
-      <header class="inner-header">
-      <h1 class="inner-header-title">Гостиницы Седоны</h1>
+     <!-- хлебные крошки-->
+     <main class="inner-breadcrumbs">
+      <section class="breadcrumbs">
+      <h1 class="breadcrumbs-title">Гостиницы Седоны</h1>
 <ul class="breadcrumbs-list">
 <li class="breadcrumbs-item"><a class="main-page-link" href="catalog.html"><span class="visually-hidden"> Домой</span></a> </li>
 <li class="breadcrumbs-item"><a class="main-page-link current-page" > Гостиницы</a> </li>
 </ul>
- </header>
+</section>
+ <!--Фильтр-->
  <section class="filter">
-  <h2 class="visually-hidden">Фильтр </h2>
+<h2 class="visually-hidden">Фильтр </h2>
 <ul class="filter-list">
   <li class="filter-item">
     <p class="infrastructure">Инфраструктура:</p>
@@ -69,14 +70,17 @@ s<!DOCTYPE html>
     <input type="range" name="range"  min="0" max="9000" step="1000" value="7000"></form></li>
 
   <li class="filter-item">
-    <form class="answer" action="#" method="post"><button class="apply" type="submit" >Применить</button>
-    <button class="reset" type="submit" >Сбросить</button></form></li>
+    <form class="answer" action="#" method="post">
+    <button class="apply" type="submit" >Применить</button>
+    <button class="reset" type="submit" >Сбросить</button>
+   </form>
+  </li>
 </ul>
       </section>
-
+<!-- Сортировка и упорядочивание значков-->
       <section class="sort">
         <ul class="sort-list">
-          <li class="sort-item"><p class="total-number">Найдено гостиниц: 38</p></li>
+          <li class="sort-item"><p class="total-number">Найдено гостиниц: <a class="amount"  href="#" >38</a></p></li>
 
           <li class="sort-item"><form class="price-control" action="#"  method="post">
             <select  class="price-view"  name="price-view" class="price-view"  aria-label="Сортировка">
@@ -138,6 +142,10 @@ src="img/hotel-4.jpg" alt=" Вид  из окна">
       <form class="add-to-favorite" action="#" method="post"><button class="add" type="submit" >В   избранное</button></p>
       <p class="hotels-raiting"><span class="visually-hidden"></span>Рейтинг: 9,2</p>
 </div>
+</section>
+
+<!-- Пагинация-->
+ <section class="pagination-section">
 <div class="pagination">
   <ul class="pagination-list">
     <li class="pagination-item"><a  class="pagination-link pagination-current">1</a>
@@ -147,13 +155,13 @@ src="img/hotel-4.jpg" alt=" Вид  из окна">
             <li class="pagination-item"><a  href="#" class="pagination-link pagination-next"><span class="visually-hidden">Следующая страница </span></a>
               <li class="pagination-item"><a   class="pagination-link pagination-last">10</a>
     </li>
-
   </ul>
 </div>
 </section>
      </main>
+
  <!--start-footer-->
- <!--start-footer-->
+ <!--рассылка-->
 <footer class="important">
   <section class="footer-subscribe">
    <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -163,6 +171,7 @@ src="img/hotel-4.jpg" alt=" Вид  из окна">
     <input type="submit" value="Подписаться">
   </form>
   </section>
+    <!--инф для связи-->
   <section class="info-connect">
     <ul class="social-list">
       <li class="social-item">
@@ -171,11 +180,12 @@ src="img/hotel-4.jpg" alt=" Вид  из окна">
           <a class="button" href="https:// t.me/htmlacademy"><span class="visually-hidden"> Телеграм</span></a>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlcademyru"><span class="visually-hidden"> YouTube</span></a>
-    </ul class="info-phone">
+    </ul >
+
     <ul class="phone-list">
       <li class="phone-item"><a href="#"  alt="Телефон">+7 (812) 812-12-12</a></li>
     </ul>
-  </ul>
+
   <ul class="info-website">
     <li class="website-item"><a href="#"><img src="img/svg/Logo1.svg" alt="Логотип компании"></a></li>
   </ul>
@@ -184,3 +194,4 @@ src="img/hotel-4.jpg" alt=" Вид  из окна">
 <!--end-footer-->
   </body>
 </html>
+€€
