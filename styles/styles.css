@@ -1,0 +1,222 @@
+@font-face{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/PTSans-Regular.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/PTSans-Bold.woff2") format("woff2");
+    font-display: swap;
+}
+body{
+    font-family: "PT Sans" , Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+    background-color: #fff;
+}
+.navigation-link{
+    font-family: "PT Sans" , Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+.navigation-item{
+    list-style-type: none;
+}
+.navigation-link-current{
+    text-decoration: underline;
+}
+.want-to-that-place{
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: uppercase;
+    background: #756157;
+    border-radius: 4px;
+    }
+
+
+/*!hero-блок*/
+.banner {
+    width:1200px;
+    height: 485px;
+    background-image: url("../images/main-part-background.jpg");
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.banner::after {
+    content: url("../images/svg/corners-for-main-background.svg");
+    position: absolute;
+    width:  1200px;
+    height:57px;
+    top: 428px;
+    left: 0;
+    margin-bottom: 0;
+}
+.banner-text{
+    margin-top: 51px;
+    margin-left: 371px;
+}
+.hero-description{
+    width: 1200px;
+    height: 282px;
+    text-align: center;
+}
+.description-sedona{
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    }
+.description-reason-to-visit{
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+}
+/*!hero-блок end*/
+.advantages-list{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    list-style-type: none;
+    text-align: center;
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+.advantages-item{
+    width: 400px;
+    height: 384px;
+}
+.advantages-item:last-child{
+    margin-bottom: 0;
+}
+.advantages-title{
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+margin-top: 103px;
+margin-left: 112.5px;
+margin-right: 112.5px;
+align-items: baseline;
+width: 175px;
+height: 56px;
+}
+.advantages-desctiption{
+    font-weight: 400;
+    margin-top: 62px;
+    margin-left: 85px;
+    margin-right: 85px;
+    align-items: baseline;
+    width: 230px;
+    height: 42px;
+}
+.color{color: #333333;
+}
+.advantages-picture{
+    display: block;
+    width:  800px;
+    height: 384px;
+    object-fit: cover;
+}
+.recommendation-list{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    list-style-type: none;
+    text-align: center;
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+.recommendation-item{
+    width: 400px;
+    height: 384px;
+    border: 1px solid #000;
+    margin: 0;
+}
+.recommendation-title{
+    font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+margin-top: 182px;
+margin-left: auto;
+margin-right: auto;
+align-items: baseline;
+width: 230px;
+height: 28px;
+}
+.recommendation-desctiption{
+    font-weight: 400;
+    color: #333333;
+    margin-top: 62px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: baseline;
+    width: 230px;
+    height: 63px;
+}
+.blue{
+    background: #82B3D3 no-repeat;
+    color: #FFFFFF;
+}
+.light-blue{
+    background: rgba(131, 179, 211, 0.12) no-repeat;
+}
+.not-so-blue{
+    background: rgba(131, 179, 211, 0.2) no-repeat;
+
+}
+.search{
+    text-align: center;
+}
+.searching-hotel{
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.searching-hotel--offer{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.button-search{
+    width: 376px;
+    height: 52px;
+    background-color: #756157;
+    border-radius: 4px;
+    margin-left: auto;
+margin-right: auto;
+}
+
+.button-all{
+    font-size: 20px;
+line-height: 36px;
+text-transform: uppercase;
+color: #FFFFFF;
+text-decoration: none;
+}
+.subscribe{
+    width:1200px;
+    height: 415px;
+    background-image: url("../images/background-subscribe\ —\ копия.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    text-align: center;
+}
+.subscribe-title{
+    font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
