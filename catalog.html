@@ -14,7 +14,7 @@
             <ul class="navigation-list">
         <li class="navigation-item"><a class="navigation-link" href="#">Главная</a></li>
         <li class="navigation-item"><a  class="navigation-link" href="#">О седоне</a></li>
-        <li class="navigation-item"><a class="navigation-link navigation-link-current" >Гостиницы</a></li>
+        <li class="navigation-item"><a class="navigation-link navigation-link-current" aria-current="page">Гостиницы</a></li>
         </ul>
 
         <ul class="navigation-list navigation-user">
@@ -25,7 +25,7 @@
             <a  class="navigation-link"  href="#"><span class="visually-hidden">Избранное</span></a>
         </li>
         <li class="navigation-item want">
-            <a class="navigation-link want-to-that-place" href="#">ХОЧУ СЮДА!</a>
+            <a class="navigation-link want-to-that-place" href="#"  >ХОЧУ СЮДА!</a>
         </li>
         </ul>
     </nav>
@@ -96,13 +96,11 @@
 </div>
 
 <!-- Сортировка и упорядочивание значков-->
-    <section class="sort">
+    <section class="hotels">
         <h2 class="visually-hidden">Сортировка и упорядочение результатов поиска</h2>
-
         <div class="amount-hotel">
         <p class="total-number">Найдено гостиниц: <a class="amount"  href="#" >38</a></p>
         </div>
-
         <div class="sort-hotel"><form class="price-control" action="https://echo.htmlacademy.ru"  method="post">
             <select  class="price-view"  name="price-view"   aria-label="Сортировка">
             <option value="cheap" selected>Сначала дешевые</option>
@@ -122,10 +120,10 @@
             </ul>
         </div>
         </ul>
-        </section>
+
 
 <!--перечисление карточек отелей-->
-<section class="hotel-cards">
+<div class="hotel-cards">
     <ul class="hotel-list">
         <li class="hotel-item">
 
@@ -176,12 +174,12 @@
 
     </li>
 </ul>
-</section>
+</div>
 <!-- Пагинация-->
-<section class="pagination-section">
+<div class="pagination-section">
 <h2 class="visually-hidden">Пагинация</h2>
 <ul class="pagination-list">
-    <li class="pagination-item first-page"><a  class="pagination-link pagination-current">1</a>
+    <li class="pagination-item first-page"><a  class="pagination-link pagination-current aria-current="page"">1</a>
     <li class="pagination-item next-page"><a  class="pagination-link "  href="#">2</a>
         <li class="pagination-item next-page"><a class="pagination-link"  href="#">3</a>
         <li class="pagination-item next-page"><a  class="pagination-link " href="#">4</a>
@@ -189,6 +187,7 @@
             <li class="pagination-item next-page"><a    class="pagination-link pagination-last">10</a>
     </li>
 </ul>
+</div>
 </section>
 <!--рассылка-->
 <section class="subscribe-inner">
