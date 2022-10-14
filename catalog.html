@@ -7,30 +7,35 @@
 </head>
 <body>
     <!--start-header-->
-    <header class="main-header">
-    <a  class ="navigation-logo" href="index.html"><img class="navigation-logotype" src="images/svg/logotype.svg" width="140"  height="70"  alt="Логотип компании" role="img">
-            </a>
-            <nav class="navigation">
-            <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link" href="#">Главная</a></li>
-        <li class="navigation-item"><a  class="navigation-link" href="#">О седоне</a></li>
-        <li class="navigation-item"><a class="navigation-link navigation-link-current" aria-current="page">Гостиницы</a></li>
-        </ul>
+    <div class="page-container">
 
-        <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span> </a>
-        </li>
-        <li class="navigation-item">
-            <a  class="navigation-link"  href="#"><span class="visually-hidden">Избранное</span></a>
-        </li>
-        <li class="navigation-item want">
-            <a class="navigation-link want-to-that-place" href="#"  >ХОЧУ СЮДА!</a>
-        </li>
-        </ul>
-    </nav>
-    </header>
-    <!--end-header-->
+        <header class="main-header">
+
+            <a class="navigation-logo"  href="https://htmlacademy.ru"
+                ><img class="navigation-logotype" src="images/svg/logotype.svg" width="140"  height="70" alt="Логотип компании" role="img">
+                </a>
+
+                <nav class="navigation">
+            <ul class="navigation-page">
+            <li class="navigation-item-main"><a class=" navigation-link" aria-current="page">Главная</a></li>
+            <li class="navigation-item-information"><a class="navigation-link" href="#">О Cедоне</a></li>
+            <li class="navigation-item-hotel"><a class="navigation-link navigation-link-current" href="#">Гостиницы</a></li>
+            </ul>
+
+            <ul class=" navigation-user">
+            <li class="navigation-link navigation-link-find">
+                <a class="navigation-link-user " href="#"><span class="visually-hidden">Поиск</span> </a>
+            </li>
+            <li class="navigation-link navigation-link-favourite">
+                <a class="navigation-link-user " href="#"><span class="visually-hidden">Избранное</span></a>
+            </li>
+            <li class="navigation-link navigation-link-want">
+                <a class="want-to-that-place" href="#"  >ХОЧУ СЮДА!</a>
+            </li>
+            </ul>
+        </nav>
+        </header>
+        <!--end-header-->
 
     <!--start-main-->
     <!-- хлебные крошки-->
@@ -41,8 +46,8 @@
     <h1 class="breadcrumbs-title">Гостиницы Седоны</h1>
 
 <ul class="breadcrumbs-list">
-<li class="breadcrumbs-item"><a class="main-page-link" href="catalog.html"><span class="visually-hidden"> Домой</span></a> </li>
-<li class="breadcrumbs-item"><a class="main-page-link current-page" > Гостиницы</a> </li>
+<li class="breadcrumbs-item-house"><a class="main-page-link" href="catalog.html"><span class="visually-hidden"> Домой</span></a> </li>
+<li class="breadcrumbs-item-hotel"><a class="main-page-link current-page" > Гостиницы</a> </li>
 </ul>
 </section>
 
@@ -51,6 +56,7 @@
 <h2 class="visually-hidden">Фильтр </h2>
 <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
 
+    <div class ="infrastructure-hometype">
 <ul class="catalog-filter-list">
 <li class="catalog-filter-item">
     <fieldset class="catalog-filter-group">
@@ -69,8 +75,12 @@
     <label><input class="radio" type="radio" name="type-of-home" value="Апартаменты" >Апартаменты</label>
     </fieldset>
 </li>
+</ul>
+</div>
 
-<li class="filter-item">
+<div class="price-filter-and-button">
+<ul class="filter-list-price">
+<li class="filter-item-price">
     <fieldset class="catalog-filter-group filter-price">
     <legend class="catalog-filter-title"><b>Стоимость, ₽:</b></legend>
     <div class="priceholder">
@@ -83,7 +93,7 @@
     </fieldset>
     </li>
 
-<li class="filter-item">
+<li class="filter-item-button">
 <fieldset class="catalog-filter-group filter-button">
     <legend class="catalog-filter-title"><span class="visually-hidden"> Применить:</span></legend>
     <button class="apply" type="submit" name="apply" >Применить</button><br>
@@ -192,10 +202,10 @@
 <!--рассылка-->
 <section class="subscribe-inner">
     <h2 class="subscribe-title black">Подпишитесь на рассылку</h2>
-    <p class="subscribe-text color-gray">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <p class="subscribe-text color-black">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
         <input class="subscribe-email" type="email" name="subscribe-email"  placeholder="Ваш e-mail">
-        <button class="subscribe-button button-all" type="button" name="subscribe-button">Подписаться</button>
+        <button class="subscribe-button button-all" type="button">Подписаться</button>
     </form>
     </section>
     </main>
@@ -207,23 +217,24 @@
         <section class="info-connect">
         <h2 class = "visually-hidden">Контакты</h2>
         <ul class="social-list">
-        <li class="social-item">
-            <a class="button" href="https://vk.com/htmlacademy"><span class="visually-hidden">Перейти в Вконтакте</span></a>
-            <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy"><span class="visually-hidden">Перейти в Телеграм</span></a>
-            <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlcademyru"><span class="visually-hidden"> Перейти в YouTube</span></a>
+        <li class="social-item-vk">
+            <a class="button1" href="https://vk.com/htmlacademy"><span class="visually-hidden">Перейти в Вконтакте</span></a>
+            <li class="social-item-tg">
+            <a class="button" href="https://t.me/htmlacademy"><span class="visually-hidden"> Перейти в Телеграм</span></a>
+            <li class="social-item-youtube">
+                <a class="button" href="https://www.youtube.com/user/htmlcademyru"><span class="visually-hidden"> Перейти в YouTube</span></a>
         </ul >
 
         <ul class="phone-list">
-        <li class="phone-item"><a  class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a></li>
+        <li class="phone-item"><a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a></li>
         </ul>
 
         <ul class="info-website">
-            <li class="website-item"><a href="#"><img src="#" alt="Вебсайт"></a></li>
+            <li class="website-item"><a href="#"><span class="visually-hidden">Вебсайт</span></a></li>
         </ul>
         </section>
         </footer>
         <!--end-footer-->
+    </div>
         </body>
         </html>

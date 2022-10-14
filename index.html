@@ -7,26 +7,30 @@
 </head>
 <body>
     <!--start-header-->
+<div class="page-container">
+
     <header class="main-header">
+
         <a class="navigation-logo"  href="https://htmlacademy.ru"
             ><img class="navigation-logotype" src="images/svg/logotype.svg" width="140"  height="70" alt="Логотип компании" role="img">
             </a>
+
             <nav class="navigation">
-        <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link navigation-link-current" aria-current="page">Главная</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">О Cедоне</a></li>
-        <li class="navigation-item"><a class="navigation-link " href="#">Гостиницы</a></li>
+        <ul class="navigation-page">
+        <li class="navigation-item-main"><a class=" navigation-link navigation-link-current" aria-current="page">Главная</a></li>
+        <li class="navigation-item-information"><a class="navigation-link" href="#">О Cедоне</a></li>
+        <li class="navigation-item-hotel"><a class="navigation-link " href="#">Гостиницы</a></li>
         </ul>
 
-        <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span> </a>
+        <ul class=" navigation-user">
+        <li class="navigation-link navigation-link-find">
+            <a class="navigation-link-user " href="#"><span class="visually-hidden">Поиск</span> </a>
         </li>
-        <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+        <li class="navigation-link navigation-link-favourite">
+            <a class="navigation-link-user " href="#"><span class="visually-hidden">Избранное</span></a>
         </li>
-        <li class="navigation-item  want">
-            <a class="navigation-link want-to-that-place" href="#"  >ХОЧУ СЮДА!</a>
+        <li class="navigation-link navigation-link-want">
+            <a class="want-to-that-place" href="#"  >ХОЧУ СЮДА!</a>
         </li>
         </ul>
     </nav>
@@ -36,7 +40,7 @@
     <!--start-main-->
     <!--секция для баннера.Главный заголовок и описание-->
 
-<main class="main-page">
+<main class="main-page main-container">
     <section class = "main-hero">
     <h1 class="visually-hidden">Город Седона. Путешествия.</h1>
     <div class="banner" ><img class="banner-text" src="images/svg/welcome-text1.svg" width="458"  height="352"  alt="Welcome to the gorgeous Sedona. Because the grand canyon sucks.">
@@ -54,8 +58,8 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
         <li class="advantages-item blue">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-desctiption">
+            <h3 class="advantages-title blue-title">Настоящий городок</h3>
+            <p class="advantages-desctiption blue-description">
             Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
         </li>
@@ -93,9 +97,9 @@
         <li class="advantages-picture"><img class="showlace" src="images/devils-bridge2.jpg" width="800"  height="384" alt="Мост Дьявола">
         </li>
         <li class="advantages-item blue">
-            <h3 class="advantages-title">Там есть
+            <h3 class="advantages-title blue-title">Там есть
             мост дьявола</h3>
-            <p class="advantages-desctiption">
+            <p class="advantages-desctiption blue-description">
             Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
         </li>
@@ -105,27 +109,27 @@
         <section class="recommendation">
             <ul class="recommendation-list">
         <li class="recommendation-item not-so-blue">
-            <span class="recommendation-icon-hotel"></span>
-            <h3 class="recommendation-title">
+            <div class="recommendation-icon-hotel"></div>
+            <h3 class="recommendation-title recommendation-title-hotel">
         Жильё
             </h3>
-            <p class="recommendation-desctiption">
+            <p class="recommendation-desctiption recommendation-desctiption-hotel">
             Рекомендуем пожить в настоящем мотеле,
             всё как в кино!
             </p>
         </li>
         <li class="recommendation-item white-fone">
-            <span class="recommendation-icon-food"></span>
-            <h3 class="recommendation-title">Еда</h3>
-            <p class="recommendation-desctiption">
+            <div class="recommendation-icon-food"></div>
+            <h3 class="recommendation-title recommendation-title-food">Еда</h3>
+            <p class="recommendation-desctiption recommendation-desctiption-food">
             Всегда заказывайте
             топовый фирменный бургер, вы не разочаруетесь!
             </p>
         </li>
         <li class="recommendation-item not-so-blue">
-            <span class="recommendation-icon-souvenir"></span>
-            <h3 class="recommendation-title">Сувениры</h3>
-            <p class="recommendation-desctiption">
+            <div class="recommendation-icon-souvenir"></div>
+            <h3 class="recommendation-title recommendation-title-souvenir">Сувениры</h3>
+            <p class="recommendation-desctiption recommendation-desctiption-souvenir">
             Не только китайского,
 но и настоящего местного производства!
             </p>
@@ -160,11 +164,11 @@
     <section class="info-connect">
     <h2 class = "visually-hidden">Контакты</h2>
     <ul class="social-list">
-    <li class="social-item">
-        <a class="button" href="https://vk.com/htmlacademy"><span class="visually-hidden">Перейти в Вконтакте</span></a>
-        <li class="footer-social-item">
+    <li class="social-item-vk">
+        <a class="button1" href="https://vk.com/htmlacademy"><span class="visually-hidden">Перейти в Вконтакте</span></a>
+        <li class="social-item-tg">
         <a class="button" href="https://t.me/htmlacademy"><span class="visually-hidden"> Перейти в Телеграм</span></a>
-        <li class="footer-social-item">
+        <li class="social-item-youtube">
             <a class="button" href="https://www.youtube.com/user/htmlcademyru"><span class="visually-hidden"> Перейти в YouTube</span></a>
     </ul >
 
@@ -173,10 +177,11 @@
     </ul>
 
     <ul class="info-website">
-        <li class="website-item"><a href="#"><img src="#" alt="Вебсайт"></a></li>
+        <li class="website-item"><a href="#"><span class="visually-hidden">Вебсайт</span></a></li>
     </ul>
     </section>
     </footer>
     <!--end-footer-->
+</div>
     </body>
     </html>
