@@ -11,9 +11,8 @@
     <div class="page-container">
 
         <header class="main-header">
-
             <a class="navigation-logo"  href="https://htmlacademy.ru"
-                ><img class="navigation-logotype" src="images/svg/logotype.svg" width="140"  height="70" alt="Логотип компании" role="img">
+                ><img class="navigation-logotype" src="images/svg/logotype.svg" width="140"  height="70" alt="Логотип компании">
                 </a>
 
                 <nav class="navigation">
@@ -40,7 +39,7 @@
 
     <!--start-main-->
     <!-- хлебные крошки-->
-    <main class="inner-breadcrumbs">
+    <main class="inner-breadcrumbs main-container">
     <div class="breadcrumbs-filter">
 
     <section class="breadcrumbs">
@@ -51,6 +50,7 @@
 <li class="breadcrumbs-item-hotel"><a class="main-page-link current-page" > Гостиницы</a> </li>
 </ul>
 </section>
+</div>
 
 <!--Фильтр-->
 <section class="filter">
@@ -86,7 +86,7 @@
     <legend class="catalog-filter-title"><b>Стоимость, ₽:</b></legend>
     <div class="priceholder">
     <input class="priceholder" type="text" name="from"  placeholder="от 0">
-    <input  class="priceholder"type="text" name="to" placeholder="до 9000">
+    <input  class="priceholder" type="text" name="to" placeholder="до 9000">
     </div><br>
     <div class="rangeholder">
     <input type="range" name="range"  min="0" max="9000" step="1000" value="7000">
@@ -102,9 +102,10 @@
 </fieldset>
 </li>
 </ul>
+</div>
 </form>
     </section>
-</div>
+
 
 <!-- Сортировка и упорядочивание значков-->
     <section class="hotels">
@@ -112,6 +113,7 @@
         <div class="amount-hotel">
         <p class="total-number">Найдено гостиниц: <a class="amount"  href="#" >38</a></p>
         </div>
+
         <div class="sort-hotel"><form class="price-control" action="https://echo.htmlacademy.ru"  method="post">
             <select  class="price-view"  name="price-view"   aria-label="Сортировка">
             <option value="cheap" selected>Сначала дешевые</option>
@@ -130,7 +132,6 @@
             </li>
             </ul>
         </div>
-        </ul>
 </section>
 
 <!--перечисление карточек отелей-->
@@ -148,7 +149,7 @@
     <button class="add" type="submit" name="add-Amara" >В   избранное</button></p>
     <div class="hotels-raiting">
         <div class="stars">
-<img src="images/svg/star.svg"  width="18" height="17"  alt="Звездный рейтинг гостиницы">
+<img src="images/svg/star.svg"  width="18" height="17"  alt="Рейтинг гостиницы - 4 звезды ">
 <img src="images/svg/star.svg" width="18" height="17">
 <img src="images/svg/star.svg" width="18" height="17">
 <img src="images/svg/star.svg" width="18" height="17">
@@ -168,7 +169,7 @@
 
     <div class="hotels-raiting">
         <div class="stars">
-            <img src="images/svg/star.svg" width="18" height="17" alt="Звездный рейтинг гостиницы">
+            <img src="images/svg/star.svg" width="18" height="17" alt="Рейтинг гостиницы - 4 звезды">
             <img src="images/svg/star.svg" width="18" height="17">
             <img src="images/svg/star.svg" width="18" height="17">
             <img src="images/svg/star.svg" width="18" height="17">
@@ -189,7 +190,7 @@
     <button class="add" type="submit"  name="add-desert">В   избранное</button></p>
     <div class="hotels-raiting">
         <div class="stars">
-            <img src="images/svg/star.svg" width="18" height="17" alt="Звездный рейтинг гостиницы">
+            <img src="images/svg/star.svg" width="18" height="17" alt="Рейтинг гостиницы - 3 звезды">
             <img src="images/svg/star.svg" width="18" height="17">
             <img src="images/svg/star.svg" width="18" height="17">
 
@@ -209,7 +210,7 @@
     <button class="add" type="submit"  name="add-green">В   избранное</button></p>
     <div class="hotels-raiting">
         <div class="stars">
-            <img src="images/svg/star.svg" width="18" height="17" alt="Звездный рейтинг гостиницы">
+            <img src="images/svg/star.svg" width="18" height="17" alt="Рейтинг гостиницы - 2 звезды">
             <img src="images/svg/star.svg" width="18" height="17">
                     </div>
                     <span class="point-raiting">Рейтинг: 5,0</span></div>
@@ -223,11 +224,11 @@
 <div class="pagination-section">
 <h2 class="visually-hidden">Пагинация</h2>
 <ul class="pagination-list">
-    <li class="pagination-item first-page"><a  class="pagination-link pagination-current aria-current="page"">1</a>
-    <li class="pagination-item next-page"><a  class="pagination-link "  href="#">2</a>
-        <li class="pagination-item next-page"><a class="pagination-link"  href="#">3</a>
-        <li class="pagination-item next-page"><a  class="pagination-link " href="#">4</a>
-            <li class="pagination-item unknown"><a  class="pagination-link pagination-next href="#"><span class="visually-hidden">Следующая страница </span></a>
+    <li class="pagination-item first-page"><a  class="pagination-link pagination-current aria-current">1</a></li>
+    <li class="pagination-item next-page"><a  class="pagination-link " href="#">2</a></li>
+        <li class="pagination-item next-page"><a class="pagination-link"  href="#">3</a></li>
+        <li class="pagination-item next-page"><a  class="pagination-link " href="#">4</a></li>
+            <li class="pagination-item unknown"><a  class="pagination-link pagination-next" href="#"><span class="visually-hidden">Следующая страница </span></a></li>
             <li class="pagination-item next-page"><a    class="pagination-link pagination-last">10</a>
     </li>
 </ul>
@@ -241,7 +242,7 @@
         <input class="subscribe-email" type="email" name="subscribe-email"  placeholder="Ваш e-mail">
         <button class="subscribe-button button-all" type="button">Подписаться</button>
     </form>
-
+</section>
     </main>
     <!--end-main-->
     <!--start-footer-->

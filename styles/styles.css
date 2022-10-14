@@ -12,7 +12,9 @@
     src: url("../fonts/PTSans-Bold.woff2")  format("woff2");
     font-display: swap;
 }
-
+html{
+    height: 100%;
+}
 body{
     font-family: "PT Sans" , Arial, sans-serif;
     font-style: normal;
@@ -27,6 +29,9 @@ body{
     margin: 0  auto;
     outline: 5px solid #333333;
     outline-offset: -3px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 .page-container{
     width: 1200px;
@@ -42,7 +47,6 @@ body{
 .main-header{
     display: flex;
     width: 1200px;
-    height: 64px;
 }
 .navigation-logo{
     margin-left: 70px;
@@ -407,7 +411,7 @@ text-align: center;
     background-color: #F2F2F2;
     margin: 0;
     padding: 0;
-border: 0;
+    border: 0;
 }
 .subscribe-email::placeholder{
     font-weight: 400;
@@ -452,14 +456,15 @@ border: 0;
 }
 .contacts{
     width: 1200px;
-    height: 120px;
 }
 .info-connect{
     display: flex;
     justify-content: space-between;
     width: 1060px;
     height: 50px;
-    margin: 0 70px 30px 70px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin: 0 70px 0 70px;
 
 }
 .social-list,.phone-list{
@@ -471,19 +476,16 @@ border: 0;
 .social-list{
     width: 142px;
     display: flex;
-    padding-top: 45px;
     padding-right: 0;
 }
 .phone-list{
     width: 331px;
-    padding-top: 45px;
 }
 .info-website{
     width: 115px;
     height: 33px;
     list-style-type: none;
     padding: 0;
-    padding-top: 48.5px;
     margin: 0;
 
 }
@@ -900,4 +902,7 @@ text-decoration: none;
 }
 .pagination-current{
 color: #000000;
+}
+.main-container{
+    flex-grow: 1;
 }
