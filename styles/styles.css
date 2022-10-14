@@ -342,7 +342,9 @@ text-align: center;
     line-height: 36px;
     text-transform: uppercase;
     padding-top: 96px;
-    margin: 0 auto;
+    margin: 0 398px 0 398px;
+    width: 404px;
+    height: 36px;
 }
 .searching-hotel-offer,.subscribe-text{
     font-weight: 400;
@@ -369,8 +371,6 @@ text-align: center;
 }
 .black{
     color: #000;
-    width: 297px;
-    height: 36px;
 }
 .button-all{
     font-size: 20px;
@@ -577,10 +577,19 @@ line-height: 21px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+
 }
 .infrastructure-hometype{
     width: 371px;
     height: 157px;
+}
+.catalog-filter-title{
+    font-size: 20px;
+    line-height: 24px;
+    width: 150px;
+    height: 24px;
+    padding: 0;
+    margin-bottom: 32px;
 }
 .catalog-filter-list{
     display: flex;
@@ -598,6 +607,7 @@ line-height: 21px;
 .catalog-filter-group{
     margin: 0;
     padding: 0;
+    border:0;
 }
 .price-filter-and-button{
     width: 549px;
@@ -632,6 +642,7 @@ line-height: 21px;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
+    margin-bottom: 16px;
 }
 .priceholder{
     display: flex;
@@ -648,8 +659,6 @@ line-height: 21px;
     color: #000000;
 }
 .filter-button{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     font-size: 16px;
     line-height: 20px;
@@ -662,45 +671,110 @@ line-height: 21px;
     width: 191px;
     height: 36px;
 }
+.apply{
+    background: #82B3D3;
+border-radius: 4px;
+margin-bottom: 40px;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+}
+.reset{
+    font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
 .hotels{
-    width: 1200px;
-    height: 1235px;
-    background-color: #fff;
+    margin: 0 70px 0 70px;
+    padding-top: 50px;
+    width: 1060px;
+    height: 49px;
+    display: flex;
+    vertical-align: middle;
 }
 .amount-hotel,.sort-hotel,.arrange-hotel{
     display: inline-block;
 }
 .total-number{
+    margin: 0;
+}
+.amount-hotel{
+    padding-top: 6.5px;
+    width: 338px;
+    height: 36px;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
     }
 .amount{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 36px;
         color: #000000;
     text-decoration: underline;
 }
 .sort-hotel{
-    width: 292px;
-    height: 49px;
+    margin-left: 200px;
 }
     .price-view{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+    height: 49px;
+    width: 292px;
+    border: 2px solid #E5E5E5;
+border-radius: 4px;
     }
-.arrange-icon-item{
-display: inline-block;
+.arrange-icon-list{
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+margin:  0;
+padding: 0;
+}
+.arrange-hotel{
+    width: 160px;
+    height: 48px;
+    margin-left: 70px;
+    vertical-align: baseline;
+}
+.arrange-icon-all{
+    background-image: url("../images/svg/arrange-icon.svg");
+    background-position: center;
+    width: 48px;
+    height: 48px;
+    block-size: cover;
+    background-repeat: no-repeat;
+}
+.arrange-icon-one{
+    background-image: url("../images/svg/full-screen.svg");
+    background-position: center;
+    width: 48px;
+    height: 48px;
+    block-size: cover;
+    background-repeat: no-repeat;
+}
+.arrange-icon-many{
+    background-image: url("../images/svg/list.svg");
+    background-position: center;
+    width: 48px;
+    height: 48px;
+    block-size: cover;
+    background-repeat: no-repeat;
+}
+.cards{
+    width: 1060px;
+    height: 896px;
+padding-top: 40px;
+margin-left: 70px;
+
 }
 .hotel-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 .hotel-item{
     width: 340px;
@@ -708,13 +782,31 @@ height: 438px;
 border: 1px solid #E6E6E6;
 border-radius: 4px;
 list-style-type: none;
-margin-right: 20px;
 margin-bottom: 20px;
 }
+.hotel-item:last-child{
+    margin-bottom: 0;
+}
+.hotel-image{
+    margin: 20px;
+}
+
 .hotel-name{
+    width: 340px;
     font-size: 24px;
-line-height: 28px;
-color: #000000;
+    line-height: 28px;
+    color: #000000;
+    margin: 0 20px 0  20px;
+
+}
+.hotel-image-link{
+    text-decoration:none;
+}
+.price{
+    margin: 16px 20px 16px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 .place,.place-price{
     font-weight: 400;
@@ -723,7 +815,11 @@ line-height: 21px;
 color: #333333;
 }
 .more-information{
-text-align: center;
+    margin: 16px 20px 16px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
 
 }
 .button-more-infotmation{
@@ -731,14 +827,12 @@ text-align: center;
     height: 36px;
     background-color: #756157;
     border-radius: 4px;
-    float: left;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-
 }
 .add{
     width: 140px;
@@ -746,7 +840,6 @@ text-align: center;
     background-color: #82B3D3;
     border-radius: 4px;
     font-weight: 700;
-    float: right;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 20px;
@@ -754,20 +847,33 @@ text-align: center;
     text-transform: uppercase;
 }
 .hotels-raiting{
+    margin: 16px 20px 16px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    vertical-align: center;
+}
+.stars{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+.point-raiting{
     width: 140px;
-    height: 37px;
-    background-color: #F2F2F2;
-    border-radius: 4px;
+height: 37px;
+background: #F2F2F2;
+border-radius: 4px;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+color: #333333;
 }
-.raiting{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #333333;
+.pagination{
+    width: 1060;
+    height: 60px;
+margin: 80px 70px 60px 70px;
 }
-
 .pagination-item{
     float:left;
     list-style-type:none;
