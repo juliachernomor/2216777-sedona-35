@@ -40,17 +40,13 @@
     <!-- хлебные крошки-->
     <main class="inner-breadcrumbs main-container">
     <div class="breadcrumbs-filter">
-
     <section class="breadcrumbs">
     <h1 class="breadcrumbs-title">Гостиницы Седоны</h1>
-
 <ul class="breadcrumbs-list">
 <li class="breadcrumbs-item-house"><a class="main-page-link" href="catalog.html"><span class="visually-hidden"> Домой</span></a> </li>
 <li class="breadcrumbs-item-hotel"><a class="main-page-link current-page" > Гостиницы</a> </li>
 </ul>
 </section>
-</div>
-
 <!--Фильтр-->
 <section class="filter">
 <h2 class="visually-hidden">Фильтр </h2>
@@ -61,18 +57,18 @@
 <li class="catalog-filter-item">
     <fieldset class="catalog-filter-group">
     <legend class="catalog-filter-title">Инфраструктура:</legend>
-    <label><input class="checkbox" type="checkbox" name="swimmingpool"  checked>Бассейн</label><br>
-    <label><input class="checkbox" type="checkbox" name="parking" checked>Парковка</label><br>
-    <label><input class="checkbox" type="checkbox" name="Wi-Fi" >Wi-Fi</label>
+    <label class="label-checkbox1"><input class="checkbox" width="20"  height="20" type="checkbox" name="swimmingpool"  checked>Бассейн</label><br>
+    <label class="label-checkbox2"><input class="checkbox" type="checkbox" name="parking" checked>Парковка</label><br>
+    <label class="label-checkbox3"><input class="checkbox" type="checkbox" name="Wi-Fi" >Wi-Fi</label>
     </fieldset>
 </li>
 
-<li class="filter-item">
+<li class="catalog-filter-item">
     <fieldset class="catalog-filter-group ">
     <legend class="catalog-filter-title">Тип жилья:</legend>
-    <label><input class="radio" type="radio" name="type-of-home"  value="Гостиница" checked>Гостиница</label><br>
-    <label><input class="radio" type="radio" name="type-of-home" value="Мотель" >Мотель</label><br>
-    <label><input class="radio" type="radio" name="type-of-home" value="Апартаменты" >Апартаменты</label>
+    <label class="label-radio"><input class="radio" type="radio" name="type-of-home"  value="Гостиница" checked>Гостиница</label><br>
+    <label class="label-radio"><input class="radio" type="radio" name="type-of-home" value="Мотель" >Мотель</label><br>
+    <label class="label-radio"><input class="radio" type="radio" name="type-of-home" value="Апартаменты" >Апартаменты</label>
     </fieldset>
 </li>
 </ul>
@@ -84,8 +80,8 @@
     <fieldset class="catalog-filter-group filter-price">
     <legend class="catalog-filter-title"><b>Стоимость, ₽:</b></legend>
     <div class="priceholder">
-    <input class="priceholder" type="text" name="from"  placeholder="от 0">
-    <input  class="priceholder" type="text" name="to" placeholder="до 9000">
+    <input class="priceholder-from" type="text" name="from"  placeholder="от 0">
+    <input  class="priceholder-to" type="text" name="to" placeholder="до 9000">
     </div><br>
     <div class="rangeholder">
     <input type="range" name="range"  min="0" max="9000" step="1000" value="7000">
@@ -104,6 +100,7 @@
 </div>
 </form>
     </section>
+</div>
 
 
 <!-- Сортировка и упорядочивание значков-->
@@ -220,18 +217,16 @@
 </section>
 <!-- Пагинация-->
 <section class="pagination">
-<div class="pagination-section">
 <h2 class="visually-hidden">Пагинация</h2>
 <ul class="pagination-list">
     <li class="pagination-item first-page"><a  class="pagination-link pagination-current aria-current">1</a></li>
     <li class="pagination-item next-page"><a  class="pagination-link " href="#">2</a></li>
         <li class="pagination-item next-page"><a class="pagination-link"  href="#">3</a></li>
-        <li class="pagination-item next-page"><a  class="pagination-link " href="#">4</a></li>
-            <li class="pagination-item unknown"><a  class="pagination-link pagination-next" href="#"><span class="visually-hidden">Следующая страница </span></a></li>
+        <li class="pagination-item next-page"><a  class="pagination-link" href="#">4</a></li>
+            <li class="pagination-item"><a  class="pagination-link pagination-next unknown" href="#">...<span class="visually-hidden">Следующая страница </span></a></li>
             <li class="pagination-item next-page"><a    class="pagination-link pagination-last">10</a>
     </li>
 </ul>
-</div>
 </section>
 <!--рассылка-->
 <section class="subscribe-inner">
