@@ -9,28 +9,26 @@
 <body>
     <!--start-header-->
 <div class="page-container">
-
     <header class="main-header">
-
         <a class="navigation-logo"  href="https://htmlacademy.ru"
             ><img class="navigation-logotype" src="images/svg/logotype.svg" width="140"  height="70" alt="Логотип компании">
             </a>
 
             <nav class="navigation">
-        <ul class="navigation-page">
-        <li class="navigation-item-main"><a class=" navigation-link navigation-link-current" aria-current="page">Главная</a></li>
-        <li class="navigation-item-information"><a class="navigation-link" href="#">О Cедоне</a></li>
-        <li class="navigation-item-hotel"><a class="navigation-link " href="#">Гостиницы</a></li>
+        <ul class="navigation-list">
+        <li class="navigation-item"><a class=" navigation-link navigation-link-current" aria-current="page">Главная</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="#">О Cедоне</a></li>
+        <li class="navigation-item"><a class="navigation-link " href="#">Гостиницы</a></li>
         </ul>
 
-        <ul class=" navigation-user">
-        <li class="navigation-link navigation-link-find">
-            <a class="navigation-link-user " href="#"><span class="visually-hidden">Поиск</span> </a>
+        <ul class=" navigation-list navigation-user">
+        <li class="navigation-item navigation-item-find">
+            <a class="navigation-link-find" href="#"><span class="visually-hidden">Поиск</span> </a>
         </li>
-        <li class="navigation-link navigation-link-favourite">
-            <a class="navigation-link-user " href="#"><span class="visually-hidden">Избранное</span></a>
+        <li class="navigation-item navigation-item-favourite">
+            <a class="navigation-link-favourite " href="#"><span class="visually-hidden">Избранное</span></a>
         </li>
-        <li class="navigation-link navigation-link-want">
+        <li class=" navigation-item navigation-item-want">
             <a class="want-to-that-place" href="#"  >ХОЧУ СЮДА!</a>
         </li>
         </ul>
@@ -55,7 +53,7 @@
 </section>
 
 <!--преимущества - ряд1-->
-    <section class="advantages1">
+    <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
         <li class="advantages-item blue">
@@ -64,19 +62,15 @@
             Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
         </li>
-        <li class="advantages-picture"><img class="Sedona_city" src="images/center-of-Sedona.jpg" width="800"  height="384" alt=" Один из видов города" ></li>
-        </ul>
-        </section>
-<!--преимущества - ряд2-->
-        <section class="advantages2">
-        <ul class="advantages-list">
+        <li class="advantages-picture"><img class="Sedona_city" src="images/center-of-Sedona.jpg" width="800"  height="384" alt=" Один из видов города" >
+        </li>
         <li class="advantages-item light-blue">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p class="advantages-desctiption color">
             Все достопримечательности находятся очень близко
             </p>
         </li>
-        <li class="advantages-picture not-so-blue">
+        <li class="advantages-item not-so-blue">
             <h3 class="advantages-title">Красивая
             дорога</h3>
             <p class="advantages-desctiption color">
@@ -90,11 +84,6 @@
             Большинство едет в Гранд Каньон и толпится там
             </p>
         </li>
-        </ul>
-    </section>
-    <!-- преимущества - ряд3-->
-    <section class="advantages3">
-        <ul class="advantages-list">
         <li class="advantages-picture"><img class="showlace" src="images/devils-bridge2.jpg" width="800"  height="384" alt="Мост Дьявола">
         </li>
         <li class="advantages-item blue">
@@ -103,7 +92,6 @@
             <p class="advantages-desctiption blue-description">
             Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-        </li>
         </ul>
         </section>
 <!--рекомендации-->
@@ -140,7 +128,7 @@
 <!--поиск гостиницы-->
     <section class="search">
     <h2 class = "visually-hidden">Поиск гостиницы</h2>
-    <p class="searching-hotel black"><b>Заинтересовались?</b></p>
+    <p class="searching-hotel black">Заинтересовались?</p>
     <p class="searching-hotel-offer color-gray">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
     <p class="button-search"><a class="button-all" href="catalog.html" >ПОИСК ГОСТИНИЦЫ В седоне</a></p>
@@ -178,7 +166,7 @@
     </ul>
 
     <ul class="info-website">
-        <li class="website-item"><a href="#"><span class="visually-hidden">Вебсайт</span></a></li>
+        <li class="website-item"><a  class="footer-logotype" href="#"><span class="visually-hidden">Вебсайт</span></a></li>
     </ul>
     </section>
     </footer>
