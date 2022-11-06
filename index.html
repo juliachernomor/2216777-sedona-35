@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <link rel="icon" href="favicon/favicon.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
 </head>
@@ -25,11 +25,11 @@
                 <li class="navigation-item navigation-item-search">
                     <a class="navigation-link navigation-link-search" href="#"><span class="visually-hidden">Поиск</span><svg  class="search-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg"><path d="m18.5 17-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/></svg></a>
                 </li>
-                <li class="navigation-item navigation-item-favourite">
+                <li class= "navigation-item navigation-item-favourite">
                     <a class="navigation-link navigation-link-favourite " href="#"><span class="visually-hidden">Избранное</span><svg  class="favourite-icon"  aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg"><path d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
                     <span class="quantify-in-favourites">12</span></a>
                 </li>
-                <li class="navigation-item navigation-item-want">
+                <li class= "navigation-item-want">
                     <a class="want-to-that-place" href="#"  >ХОЧУ СЮДА!</a>
                 </li>
             </ul>
@@ -187,7 +187,6 @@
             </section>
         </footer>
     <!--end-footer-->
-    </div>
     <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
             <button class="modal-close-button">
@@ -216,7 +215,9 @@
                                     <input class="field-number" id="adult" name="adult" type="number" value="2">
                                     <button class="field-button plus" type="button"><span class="visually-hidden">Плюс</span><svg class="plus-svg"  aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14"  xmlns="http://www.w3.org/2000/svg"><path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg></button>
                                 </div>
-                            <label class="field-label child" for="child">Дети:</label><span class="tooltip">
+                                <div class = "tooltip-wrapper">
+                            <label class="field-label child" for="child">Дети:</label>
+                            <span class="tooltip">
                                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                                     <svg class="tooltip-icon"  aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z"/></svg>
                                     </button>
@@ -224,6 +225,7 @@
                             Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                                     </span>
                                     </span>
+                                </div>
                             <div class="choose-child">
                                     <button class="field-button minus" type="button"><span  class="visually-hidden" >Минус</span><svg class="minus-svg"  aria-hidden="true" focusable="false"  width="14" height="2" viewBox="0 0 14 2"  xmlns="http://www.w3.org/2000/svg"><path d="M0 0v2h14V0H0Z"/></svg></button>
                                     <input class="field-number" id="child" name="child" type="number" value="2">
