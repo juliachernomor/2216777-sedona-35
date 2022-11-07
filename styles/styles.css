@@ -201,7 +201,7 @@ body{
     margin: 0;
     padding: 0;
     padding-top: 69px;
-    padding-bottom: 90px;
+    padding-bottom: 65px;
     text-align: center;
 }
 .description-sedona{
@@ -209,12 +209,13 @@ body{
     line-height: 36px;
     text-transform: uppercase;
     margin: 0 290px 25px 290px;
+    -moz-letter-spacing: 5px;
     }
 .description-reason-to-visit{
 font-weight: 400;
 font-size: 22px;
 line-height: 26px;
-margin: 0 275px 0 274px;
+margin: 0 275px 25px 274px;
 padding: 0;
 }
 /*!hero-блок end*/
@@ -406,7 +407,7 @@ padding: 0;
 }
 .search-wrapper{
     min-width: 592px;
-    padding: 96px 304px 96px 304px;
+    padding: 96px 304px 42px 304px;
     margin: 0;
     text-align: center;
 }
@@ -432,6 +433,7 @@ padding: 0;
     outline: none;
     padding: 0;
     margin: 0;
+    margin-bottom: 54px;
     display: inline-block;
 }
 .button-for-search{
@@ -471,7 +473,7 @@ padding: 0;
 .subscribe-wrapper{
     min-width: 684px;
     margin: 0;
-    padding: 96px 258px 104px 258px;
+    padding: 96px 258px 50px 258px;
 }
 .subscribe-title{
     margin: 0 auto 20px auto;
@@ -493,6 +495,7 @@ padding: 0;
 .subscribe-form{
     min-width: 684px;
     padding: 0;
+    margin-bottom: 54px;
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
@@ -558,7 +561,7 @@ padding: 0;
     padding: 0;
 }
 .social-list{
-    min-width: 240px;
+    width: 240px;
     display: flex;
     flex-wrap: wrap;
     margin-right: 138.5px;
@@ -587,20 +590,27 @@ padding: 0;
         fill:rgba(104, 162, 202, 0.3);
     }
 .phone-list{
-    min-width: 450px;
+    width: 450px;
     display: flex;
+    align-items: top;
     flex-wrap: wrap;
     margin-right: 115.5px;
-    align-items: center;
+}
+.phone-item{
+    width: 331px;
+    min-height: 40px;
+    margin-bottom: 15px;
+    padding: 0;
 }
 .phone-number{
     position: relative;
 }
 .number{
+    min-height: 40px;
     fill: #000;
     position: absolute;
     content: "";
-    top: 7px;
+    top: calc(100% + 58px);
     left:1px;
     right:0;
     bottom:0;
@@ -613,13 +623,18 @@ padding: 0;
     fill: rgba(117, 97, 87, 0.3);
     }
 .website-list{
+    width: 115px;
+    display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 .website-item{
     min-width: 115px;
+    min-height: 33px;
     margin: 0;
+    margin-bottom: 15px;
     padding: 0;
 }
 .footer-logotype{
@@ -628,7 +643,7 @@ padding: 0;
 .website{
     position: absolute;
     content: "";
-    top:8px;
+    top: calc(100% + 10px);
     left:0;
     right:5px;
     bottom:15px;
@@ -683,14 +698,22 @@ padding: 0;
     margin-left:28.5px;
     position: relative;
 }
-.breadcrumbs-item-house:after {
+.breadcrumbs-item-hotel{
+    min-width: 73px;
+    position: relative;
+    margin-right: 28.5px;
+}
+.breadcrumbs-item-hotel::after{
     position: absolute;
-    content: url("../images/svg/arrow.svg");
-    background-size: contain;
+    content: "";
+    width: 6.39px;
+    height: 10px;
+    background-image: url("../images/svg/arrow.svg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    top: 0 px;
-    left: -5px;
+    top: 5px;
+    left:  calc(100% - 90px);
 }
 .house{
     position: absolute;
@@ -719,6 +742,7 @@ line-height: 21px;
 .catalog-filter{
     display: grid;
     grid-template-columns: 150.43px 70px 150.43px 140.15px 288px 70px 191px;
+    row-gap:30px;
 }
 .catalog-filter-facilities{
     grid-column:1/2;
@@ -1018,13 +1042,12 @@ color:rgba(255, 255, 255, 0.6);
 
 /* !          сортировка карточек            */
 .arrange-cards{
-    padding: 50px 70px 40px 70px;
+    padding: 50px 70px 32px 70px;
     min-height: 49px;
     display: flex;
     flex-wrap: wrap;
 }
 .amount-hotel{
-
     width: 338px;
     font-size: 30px;
     line-height: 36px;
@@ -1038,6 +1061,7 @@ color:rgba(255, 255, 255, 0.6);
 .price-control{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: top;
     min-width: 292px;
     margin-left: 200px;
@@ -1081,7 +1105,7 @@ color:rgba(255, 255, 255, 0.6);
     outline: 1px rgba(0, 0, 0, 0.3) solid;
 }
 .sorting-list{
-    min-width: 160px;
+    width: 160px;
     min-height: 48px;
     margin-left: 70px;
     margin:0 0 0 70px;
@@ -1089,9 +1113,17 @@ color:rgba(255, 255, 255, 0.6);
     box-sizing: border-box;
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content:start;
     align-items: top;
     }
+.list-order{
+    min-height: 48px;
+    margin-bottom: 10px;
+}
+.list-order:not(:nth-child(3)){
+margin-right: 8px;
+}
 .order-link{
     border-radius: 4px;
     border:1px rgba(0, 0, 0, 0.3) solid;
@@ -1262,13 +1294,13 @@ color:rgba(255, 255, 255, 0.6);
     width: 140px;
 }
 .stars{
-    display: block;
+    display: inline;
     height: 17px;
     background:url("../images/svg/star.svg");
     background-size: 18px 17px;
     background-repeat: space;
     margin: 0;
-    align-self: center;
+
 }
 .stars-hotel1{
     width: 89px;
@@ -1301,12 +1333,13 @@ color:rgba(255, 255, 255, 0.6);
 
 /* !---------pagination-----------*/
 .pagination{
-    padding: 40px 70px 60px 70px;
+    padding: 40px 70px 50px 70px;
 }
 .pagination-list{
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap ;
     list-style-type:none;
     position: relative;
 }
@@ -1324,6 +1357,7 @@ color:rgba(255, 255, 255, 0.6);
 .pagination-item{
     margin-right: 8px;
     display: flex;
+    margin-bottom: 10px;
 }
 .first-page{
     background-color: #F2F2F2;
@@ -1372,6 +1406,7 @@ margin-top: auto;}
     left: 0;
     display: flex;
     background-color: rgba(242, 242, 242, 0.8);
+    z-index: 2;
 }
 .modal-container-close{
     display: none;
@@ -1382,7 +1417,6 @@ margin-top: auto;}
     margin: auto;
     background-color: #ffffff;
     box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
-    z-index: 2;
 }
 .modal-auth{
     width: 717px;
@@ -1412,7 +1446,7 @@ margin-top: auto;}
     background-color: #e6e6e6;
 }
 .modal-content{
-    padding: 64px 70px;
+    padding: 64px 70px 49px 70px;
 }
 .modal-title {
     margin: 0;
@@ -1553,8 +1587,10 @@ margin-top: auto;}
 .field-number::-webkit-inner-spin-button,.field-number::-webkit-outer-spin-button{
     display: none;
 }
+
 .search-button{
-    margin-top:48px ;
+    margin-top:48px;
+    margin-bottom: 15px;
     grid-column: 1/-1;
     width: 100%;
     min-height:60px;
