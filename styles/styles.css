@@ -74,7 +74,7 @@ body {
     overflow: hidden;
 }
 
-/* !start-navigation */
+/* !navigation */
 .main-header {
     position: relative;
 }
@@ -231,8 +231,6 @@ body {
     border-radius: 4px;
 }
 
-/* !end-navigation */
-
 /* !hero-блок */
 .main-hero {
     margin: 0;
@@ -285,10 +283,7 @@ body {
     padding: 0;
 }
 
-/* !hero-блок end */
-
 /* !advanture-blocks */
-
 .advantages-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -403,10 +398,7 @@ body {
     color: #333;
 }
 
-/* !end advanture-blocks */
-
 /* !recomendation-blocks */
-
 .recommendation-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -516,10 +508,7 @@ body {
     background: rgba(131, 179, 211, 0.2) no-repeat;
 }
 
-/* !end recomendation-blocks */
-
 /* !----- subscribe, search------ */
-
 .search {
     width: 1200px;
 }
@@ -746,10 +735,7 @@ body {
     border-radius: 4px;
 }
 
-/* !----- end subscribe, search------ */
-
 /* !-----footer----- */
-
 .contacts {
     width: 1200px;
     min-height: 120px;
@@ -908,10 +894,7 @@ body {
     fill: rgba(117, 97, 87, 0.3);
 }
 
-/* !-----end footer------ */
-
-/*!             хлебные крошки                    */
-
+/*!             breadcrumbs                   */
 .filter {
     color: #fff;
     background: url("../images/background-filter.jpg");
@@ -1006,8 +989,6 @@ body {
     fill: rgba(255, 255, 255, 0.3);
     stroke: rgba(255, 255, 255, 0.3);
 }
-
-/* !-----end-breadcrumbs------ */
 
 /* !       filter         */
 .filter-hotel {
@@ -1409,8 +1390,7 @@ body {
     opacity: 0.1;
 }
 
-/* !          сортировка карточек            */
-
+/* !         arrange-cards            */
 .arrange-cards {
     padding: 50px 70px 32px;
     min-height: 49px;
@@ -1567,8 +1547,7 @@ body {
     outline: 1px  solid #82b3d3;
 }
 
-/* !             карточки отелей                  */
-
+/* !             hotel cards                  */
 .cards {
     padding: 0 70px 40px;
 }
@@ -1821,7 +1800,6 @@ body {
 }
 
 /* !---------pagination----------- */
-
 .pagination {
     padding: 38px 70px 50px;
 }
@@ -1908,8 +1886,27 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-/* !        modal and  tooltip             */
+.list-pages:hover,
+.list-pages:focus {
+    outline: 1px #82b3d3 solid;
+}
 
+.list-pages:active {
+    outline: 1px #82b3d3 solid;
+    background-color: rgba(242, 242, 242, 0.1);
+}
+
+.current-page:hover,
+.current-page:focus {
+    outline: 1px #82b3d3 solid;
+}
+
+.current-page:active {
+    outline: 1px #82b3d3 solid;
+    background-color: #fff;
+}
+
+/* !        modal and  tooltip             */
 .modal-container {
     position: fixed;
     width: 100%;
