@@ -105,11 +105,9 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     min-width: 450px;
-}
-
-.navigation-item {
     list-style-type: none;
 }
+
 
 .navigation-link {
     display: -webkit-box;
@@ -644,6 +642,12 @@ body {
         flex-wrap: nowrap;
     text-align: center;
 }
+.subscribe-email:focus{
+    outline: none;
+}
+.subscribe-email:focus-visible {
+    outline: 2px solid #68a2ca;
+}
 
 .subscribe-button  {
     font-family: "PT Sans", Arial,sans-serif;
@@ -968,7 +972,10 @@ body {
 }
 
 .main-page-link:focus svg {
-    fill: inherit;
+    outline: none;
+}
+.main-page-link:focus svg {
+    outline: 2px solid  #83b3b3;
 }
 
 .main-page-link:active svg {
@@ -1425,12 +1432,15 @@ body {
 }
 
 .price-view:focus {
-    padding: 13px 49px 13px 19px;
-    outline: 1px #82b3b3 solid;
+    outline: none;
+}
+.price-view:focus-visible{
+padding: 13px 49px 13px 19px;
+outline: 1px #82b3b3 solid;
 }
 
 .price-view:active {
-    border: 7px solid #000;
+    border: 1px solid #000;
     outline: none;
 }
 
@@ -1498,8 +1508,13 @@ margin-right: 8px;
 }
 
 .order-link:focus {
+    outline:  none;
+}
+
+.order-link:focus-visible {
     outline:  1px  solid #82b3d3;
 }
+
 
 /*!             карточки отелей                  */
 .cards {
