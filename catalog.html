@@ -56,21 +56,21 @@
                                 <ul class="catalog-filter-list">
                                     <li class="catalog-filter-item">
                                         <label class="label-checkbox">
-                                            <input class="visually-hidden control-input"  type="checkbox" name="swimming-pool"  checked>
+                                            <input class="visually-hidden control-input"  type="checkbox" name="swimming-pool" required checked>
                                             <span class="control-mark"></span>
                                             <span class="control-label">Бассейн</span>
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="label-checkbox">
-                                            <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                                            <input class="visually-hidden control-input" type="checkbox" name="parking" required checked>
                                             <span class="control-mark"></span>
                                             <span class="control-label">Парковка</span>
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="label-checkbox">
-                                            <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi" >
+                                            <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi" required>
                                             <span class="control-mark"></span>
                                             <span class="control-label">Wi-Fi</span>
                                         </label>
@@ -84,21 +84,21 @@
                                 <ul class="catalog-filter-list">
                                     <li class="catalog-filter-item">
                                         <label class="label-radio">
-                                            <input class="visually-hidden control-input" type="radio" name="type-of-home"  value="Гостиница" checked>
+                                            <input class="visually-hidden control-input" type="radio" name="type-of-home"  value="Гостиница" required checked>
                                             <span class="control-mark control-mark-radio"></span>
                                             <span class="control-label">Гостиница</span>
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="label-radio">
-                                            <input class="visually-hidden control-input" type="radio" name="type-of-home" value="Мотель" >
+                                            <input class="visually-hidden control-input" type="radio" name="type-of-home" value="Мотель" required>
                                             <span class="control-mark control-mark-radio"></span>
                                             <span class="control-label">Мотель</span>
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="label-radio">
-                                            <input class="visually-hidden control-input" type="radio" name="type-of-home" value="Апартаменты" >
+                                            <input class="visually-hidden control-input" type="radio" name="type-of-home" value="Апартаменты" required>
                                             <span class="control-mark control-mark-radio"></span>
                                             <span class="control-label">Апартаменты</span>
                                         </label>
@@ -110,8 +110,8 @@
                             <fieldset class=" catalog-filter-group filter-price">
                                 <legend class="catalog-filter-title"><b>Стоимость, ₽:</b> </legend>
                                     <div class="priceholder-wrapper">
-                                        <input class="priceholder priceholder-from" type="text" name="from"  placeholder="0">
-                                        <input  class="priceholder priceholder-to" type="text" name="to" placeholder="9000">
+                                        <input class="priceholder priceholder-from" type="text" name="from"  placeholder="0" required>
+                                        <input  class="priceholder priceholder-to" type="text" name="to" placeholder="9000" required>
                                     </div>
                                     <div class="range-scale">
                                         <div class="range-bar" style="left:8px; width: 206.5px">
@@ -232,7 +232,7 @@
                             <h2 class="subscribe-title black">Подпишитесь на рассылку</h2>
                             <p class="subscribe-description color-black">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
                             <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-                                <input class="subscribe-email" type="email" name="subscribe-email"  placeholder="Ваш e-mail">
+                                <input class="subscribe-email" type="email" name="subscribe-email"  placeholder="Ваш e-mail" required>
                                 <button class="subscribe-button button-all" type="button">Подписаться</button>
                             </form>
                         </div>
