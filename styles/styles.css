@@ -185,7 +185,7 @@ body {
 .navigation-link-search:focus svg,
 .navigation-link-favourite:focus svg  {
     fill: #756157;
-    transform:scale(1.5);
+    transform:scale(2);
 }
 
 .navigation-link-search:active svg,
@@ -412,10 +412,6 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-}
-
-.blue-description {
-    height: 63px;
 }
 
 .color {
