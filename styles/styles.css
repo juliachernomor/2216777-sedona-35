@@ -120,6 +120,19 @@ body {
     padding: 20px 16px;
 }
 
+.navigation-link-click{
+    cursor: pointer;
+}
+
+.navigation-link-click:hover,
+.navigation-link-click:focus {
+    color: #756157;
+}
+
+.navigation-link-click:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
 .navigation-item:last-child {
     padding-right: 0;
 }
@@ -165,6 +178,19 @@ body {
     min-width: 44px;
     min-height: 64px;
     list-style-type: none;
+}
+
+.navigation-link-search:hover svg,
+.navigation-link-favourite:hover svg,
+.navigation-link-search:focus svg,
+.navigation-link-favourite:focus svg  {
+    fill: #756157;
+    transform:scale(1.5);
+}
+
+.navigation-link-search:active svg,
+.navigation-link-favourite:active svg {
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 .quantify-in-favourites {
@@ -215,14 +241,12 @@ body {
 
 .want-to-that-place:hover,
 .want-to-that-place:focus {
-    background-color: #615048;
-    border-radius: 4px;
+    background-color: #756257;
 }
 
 .want-to-that-place:active {
-    background-color: #756157;
-    color: rgba (255, 255, 255, 0.3);
-    border-radius: 4px;
+    background-color: rgba(117,98,87, 0.5);
+    color: rgba(242, 242, 242, 0.3);
 }
 
 .want-to-that-place:disabled {
